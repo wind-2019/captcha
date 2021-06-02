@@ -5,7 +5,7 @@ import (
 	"github.com/iris-contrib/middleware/cors"
 	"github.com/kataras/iris"
 	"github.com/kataras/iris/hero"
-	"github.com/orange-son/captcha"
+	"github.com/wind-2019/captcha"
 	"math/rand"
 	"strconv"
 	"time"
