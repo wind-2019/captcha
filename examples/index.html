@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <title>图片验证</title>
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/imageValidate.css"/>
+</head>
+<body>
+<div id="container">
+    <div class="imageDiv">
+        <img id="validateImage" src=""/>
+        <img id="slideImage" src=""/>
+    </div>
+    <div>
+        <div id="sliderOuter">
+            <div id="dragDiv">拖动滑块完成拼图</div>
+            <div id="sliderInner">
+                <i class="fas fa-angle-double-right"></i>
+                <div class="coverIcon"></div>
+            </div>
+        </div>
+    </div>
+    <div class="resultDiv">
+        <span id="operateResult"></span>
+        <button class="btn btn-success" onclick="exchange();"><i class="fas fa-redo"></i>&nbsp;换一组</button>
+    </div>
+</div>
+
+</body>
+<script type="text/javascript">
+    var telephone = "18112345678";
+</script>
+<script type="text/javascript" src="./js/jquery-3.4.0.min.js"></script>
+<script type="text/javascript" src="./js/imageValidate.js?k=2"></script>
+</html>
