@@ -60,10 +60,8 @@ func (c *captcha) OutImgBytes() (error, []byte, []byte) {
 	im, imSlide := c.OutImg()
 	bufIm := new(bytes.Buffer)
 	err := png.Encode(bufIm, im)
-
 	bufImSlide := new(bytes.Buffer)
 	err = png.Encode(bufImSlide, imSlide)
-
 	return err, bufIm.Bytes(), bufImSlide.Bytes()
 }
 
@@ -109,7 +107,6 @@ func randInt(min int, max int) int {
 }
 
 //New 创建图片二维码对象
-//fault 容错值
 func New() *captcha {
 	c := &captcha{}
 	return c

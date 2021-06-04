@@ -51,7 +51,7 @@ func Check(ctx iris.Context) iris.Map {
 
 func GetImgTest(ctx iris.Context) iris.Map {
 	cap := captcha.New()
-	n := strconv.Itoa(rand.Intn(10) + 10)
+	n := strconv.Itoa(rand.Intn(7) + 10)
 	if err := cap.SetBgImg("./examples/target/" + n + ".jpg"); err != nil {
 		fmt.Println(err)
 	}
